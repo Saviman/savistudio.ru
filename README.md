@@ -1,2 +1,3 @@
 # savistudio.ru
-web-studio
+Веб-студия SaviStudio
+Автор Кирилл Байков
