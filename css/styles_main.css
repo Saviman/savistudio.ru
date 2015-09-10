@@ -140,10 +140,11 @@ section{
             width: 700px;
             margin: 0px auto;
             text-align: justify;
+            line-height: 25px;
         }
     .section_about_works{
         margin: 0px auto;
-        width: 1000px;
+        width: 1050px;
         height: 220px;
         padding-top: 30px;
     }
@@ -199,7 +200,8 @@ section{
         padding-bottom: 30px;
     }
     .works_wrapper{
-        width: 1200px;
+        max-width: 1500px;
+        min-width: 1200px;
         margin: 0px auto;
         display: table;
     }
@@ -225,6 +227,7 @@ section{
                     width: 100%;
                     height: 100%;
                     background-color: rgba(255,255,255,0.5);
+                    color: #555555;
                     left: 0px;
                     top: 0px;
                     border: 1px solid #8ccf3f;
@@ -237,7 +240,12 @@ section{
 
                 }
                     .works_p_title{
-                        font-size: 1em;
+                        font-size: 1.3em;
+                        text-transform: uppercase;
+                        padding-top: 24%;
+                    }
+                    .works_p_text{
+                        font-size: 0.85em;
                     }
 
 footer{
@@ -297,12 +305,14 @@ footer{
                     color: #FFF;
                     font-size: 20px;
                 }
+                .button_container{
+                    width: 100%;
+                    padding-top: 30px;
+                    text-align: center;
+                }
             .button{
-                border: 3px solid #78b036;
+                border: 3px solid /*#78b036*/#8CCF3F;
                 border-radius: 25px;
-                color: #FFFFFF;
-                background-color: #666;
-                margin-top: 45px;
                 width: 250px;
                 height: 50px;
                 font-size: 1em;
@@ -313,8 +323,31 @@ footer{
                 -o-transition:   0.3s ease-in-out;
                 transition:  0.3s ease-out;
             }
+            .button_footer{
+                color: #FFFFFF;
+                background-color: #666;
+                margin-top: 45px;
+            }
+            .button_works{
+                color: #555555;
+                background-color: #EEEEEE;
+
+            }
+            .button_works:hover a{
+                color: #FFFFFF;
+            }
+            .button_works a{
+                display :block;
+                padding: 13px;
+                color: #555555;
+                transition: all 0.3s ease-out 0s;
+                -webkit-transition:   0.3s ease-in-out;
+                -moz-transition:   0.3s ease-in-out;
+                -o-transition:   0.3s ease-in-out;
+                transition:  0.3s ease-out;
+            }
             .button:hover{
-                background-color: #78b036;
+                background-color: #8CCF3F/*#78b036*/;
             }
     .footer_container_company{
         width: 100%;
