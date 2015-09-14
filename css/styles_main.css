@@ -280,19 +280,40 @@ section{
                         .report_header_title h2{
                             font-size: 0.9em;
                         }
-                        .report_header_title span{
+                        .report_header_title > span > a{
                             font-size: 0.8em;
                             text-transform: uppercase;
+                            color: #555555;
+                        }
+                        .report_header_title > span > a:hover{
+                            font-weight: bold;
                         }
                     .report_text{
                         margin-top: -3px;
                         margin-left: 34px;
                         border-left: 1px solid #D5D5D5;
                     }
-                        .report_text p{
+                        .report_text p {
                             padding: 15px 0 0 35px;
                             font-size: 0.9em;
                         }
+    .social_wrapper{
+        max-width: 100%;
+    }
+        .social_button{
+            width: 33.333%;
+            height: 100px;
+            float: left;
+        }
+        .social_fcolor{
+            background-color: #3A5795;
+        }
+        .social_vkcolor{
+            background-color: #567CA4;
+        }
+        .social_gcolor{
+            background-color: #DD4D40;
+        }
 footer{
     position: fixed;
     width: 100%;
