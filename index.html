@@ -25,6 +25,7 @@
         <div class="section_wrapper">
             <div class="section_studio_chrome">
                 <img src="img/chr.png" alt="Браузер"/>
+                    <div class="text_studio" id="text"></div>
                     <div class="circle circle_sov studio-color">
                         <p>Современно</p>
                     </div>
@@ -245,8 +246,24 @@
             </form>
         </div>
         <div class="footer_container_company">
-            <a href="savistudio.ru" class="footer_company">savistudio 2015</a>
+            <a href="http://savistudio.ru" class="footer_company">savistudio 2015</a>
         </div>
     </footer>
+    <script language="JavaScript">
+        var text = 'Разработка сайтов, интернет-магазинов, поддержка, дизайн';
+        i = 0;
+        function type(){
+            i++;
+            if( i <= text.length )
+                document.getElementById("text").innerHTML = text.substr(0, i);
+            else
+            {
+                //document.getElementById("text").innerHTML = "";
+                //i = 0;
+            }
+            setTimeout( type, 100 );
+        }
+        type();
+    </script>
 </body>
 </html>

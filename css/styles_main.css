@@ -108,6 +108,16 @@ nav ul li > a:hover{
             position: relative;
             z-index: 100;
         }
+        .text_studio{
+            color: #fff;
+            font-size: 1.3em;
+            position: absolute;
+            top: 153px;
+            left: 250px;
+            width: 500px;
+            font-weight: bold;
+            text-align: center;
+        }
             .section_studio_chrome img{
                 width: 85%;
                 margin: 0px auto;
@@ -141,6 +151,7 @@ nav ul li > a:hover{
                 position: absolute;
                 border-radius: 100px;
                 text-align: center;
+                display: table;
             }
             .circle_adapt{
                 width: 130px;
@@ -155,12 +166,19 @@ nav ul li > a:hover{
                 left: 130px;
             }
             .circle_adapt:hover + .section_studio_iphone{
-                right: -100px;
+                right: -60px;
             }
             .circle p{
                 color: #FFFFFF;
-                padding: 39% 0;
+                display: table-cell;
+                vertical-align: middle;
             }
+            /*.circle_sov p{
+                line-height: 104px;
+            }
+            .circle_adapt{
+                line-height: 124px;
+            }*/
 section{
     position: relative;
     width: 100%;
