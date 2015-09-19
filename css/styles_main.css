@@ -108,14 +108,32 @@ nav ul li > a:hover{
             position: relative;
             z-index: 100;
         }
-        .text_studio{
-            color: #fff;
-            font-size: 1.3em;
+        .text_container{
             position: absolute;
+            width: 500px;
+            height: 66px;
             top: 153px;
             left: 250px;
-            width: 500px;
-            font-weight: bold;
+            overflow: hidden;
+        }
+        .text_container:hover{
+            
+        }
+        .text_studio{
+            color: #fff;
+            font-size: 1.5em;
+            height: 66px;
+            display: block;
+            /*position: absolute;
+            top: 153px;
+            left: 250px;
+            width: 500px;*/
+
+            text-align: center;
+        }
+        .text_ad{
+            color: #fff;
+            font-size: 1.5em;
             text-align: center;
         }
             .section_studio_chrome img{
@@ -200,6 +218,7 @@ section{
             margin: 0px auto;
             text-align: justify;
             line-height: 25px;
+            font-size: 0.85em;
         }
     .section_about_works{
         margin: 0px auto;
@@ -401,7 +420,7 @@ section{
                     }
                         .report_text p {
                             padding: 15px 0 0 35px;
-                            font-size: 0.9em;
+                            font-size: 0.85em;
                         }
     .social_wrapper{
         max-width: 100%;
