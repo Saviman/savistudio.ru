@@ -9,6 +9,7 @@ body{
     padding-bottom: 100% !important;
     background-color: #fff;
     font-family: "Open Sans","PT Sans", "tahoma", "Arial verdana",sans-serif;
+    font-weight: 300;
 }
 a{
     text-decoration: none;
@@ -219,11 +220,12 @@ section{
             text-align: justify;
             line-height: 25px;
             font-size: 0.85em;
+            font-weight: 300;
         }
     .section_about_works{
         margin: 0px auto;
         width: 1050px;
-        height: 220px;
+        height: 227px;
         padding-top: 30px;
     }
         .about_works_container{
@@ -261,7 +263,7 @@ section{
                 position: relative;
                 overflow: hidden;
                 color: #FFFFFF;
-                -webkit-transition: 1s all ease-in-out;
+                box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
             }
                 .about_works_image {
                     width: 100%;
@@ -309,6 +311,7 @@ section{
                         position: relative;
                         bottom: -50%;
                         font-size: 0.85em;
+                        font-weight: 300;
                         text-align: justify;
                         transition: 0.4s all ease-out 0s;
                         -webkit-transition:  0.4s all ease-in-out;
@@ -337,7 +340,7 @@ section{
                 width: 90%;
                 margin: 0px auto;
                 position: relative;
-
+                /*box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);*/
             }
                 .works img{
                     width: 100%;
@@ -345,6 +348,7 @@ section{
                 .works_title:hover{
                     display: block;
                     opacity: 100;
+                    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
                 }
                 .works_title{
                     position: absolute;
@@ -354,8 +358,9 @@ section{
                     color: #555555;
                     left: 0px;
                     top: 0px;
-                    border: 1px solid #8ccf3f;
+                    /*border: 1px solid #8ccf3f;*/
                     text-align: center;
+                    font-weight: 300;
                     opacity: 0;
                     transition: all 0.5s ease-out 0s;
                     -webkit-transition:   0.5s ease-in-out;
@@ -404,6 +409,7 @@ section{
                     }
                         .report_header_title h2{
                             font-size: 0.9em;
+                            font-weight: 300;
                         }
                         .report_header_title > span > a{
                             font-size: 0.8em;
@@ -421,6 +427,7 @@ section{
                         .report_text p {
                             padding: 15px 0 0 35px;
                             font-size: 0.85em;
+                            font-weight: 300;
                         }
     .social_wrapper{
         max-width: 100%;
@@ -448,10 +455,10 @@ section{
                 text-align: center;
                 position: absolute;
                 bottom: -100%;
-                transition: all 0.5s ease-out 0s;
-                -webkit-transition:   0.5s ease-in-out;
-                -moz-transition:   0.5s ease-in-out;
-                -o-transition:   0.5s ease-in-out;
+                transition: all 0.4s ease-out 0s;
+                -webkit-transition:   0.4s ease-in-out;
+                -moz-transition:   0.4s ease-in-out;
+                -o-transition:   0.4s ease-in-out;
             }
             .social_button:hover .social_button_wrapper{
 
@@ -555,20 +562,26 @@ footer{
                 background-color: #EEEEEE;
                 margin: 0px auto;
             }
-            .button_works:hover a{
+            .button_works:active a{
                 color: #FFFFFF;
             }
             .button_works a{
                 display :block;
                 padding: 11px;
                 color: #555555;
-                transition: all 0.3s ease-out 0s;
-                -webkit-transition:   0.3s ease-in-out;
-                -moz-transition:   0.3s ease-in-out;
-                -o-transition:   0.3s ease-in-out;
+                transition: all 0.4s ease-out 0s;
+                -webkit-transition:   0.4s ease-in-out;
+                -moz-transition:   0.4s ease-in-out;
+                -o-transition:   0.4s ease-in-out;
             }
             .button:hover{
-                background-color: #8CCF3F/*#78b036*/;
+                /*background-color: #8CCF3F;/*#78b036*/
+                border: 3px solid #EEE;
+                box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+            }
+            .button:active{
+                background-color: #8CCF3F;
+                border: 3px solid /*#78b036*/#8CCF3F;
             }
     .footer_container_company{
         width: 100%;
