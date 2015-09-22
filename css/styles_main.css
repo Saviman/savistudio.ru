@@ -24,7 +24,7 @@ header{
     height: 80px;
     background-color: #eeeeee;
     color: #555555;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.26);
     width: 100%;
     min-width: 1000px;
     z-index: 1000;
@@ -615,3 +615,93 @@ footer{
 
     }
 }*/
+.callback{
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #F00;
+    color: #FFF;
+    z-index: 100000000;
+    text-align: center;
+    display: table;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out 0s;
+                -webkit-transition:   0.5s ease-in-out;
+                -moz-transition:   0.5s ease-in-out;
+                -o-transition:   0.5s ease-in-out;
+}
+    .callback i{
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 2.5em;
+    }
+.call_backgrond{
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: rgba(0,0,0,0.55);
+    position: fixed;
+    top: -100%;
+    left: 0px;
+    z-index: 10000;
+    transition: all 0.5s ease-in-out 0s;
+                -webkit-transition:   0.5s ease-in-out;
+                -moz-transition:   0.5s ease-in-out;
+                -o-transition:   0.5s ease-in-out;
+}
+.callback:hover{
+    opacity: 0;
+}
+.callback:hover + .call_backgrond{
+    top: 0px;
+}
+    .container_call_form{
+        width: 300px;
+        height: 200px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+        #call{
+            width: 400px;
+            height: 326px;
+            background-color: #eeeeee;
+            margin: 0px auto;
+        }
+            #call h1{
+                text-align: center;
+                padding: 30px 0 0px 0;
+                font-size: 1.3em;
+                font-weight: 500;
+            }
+            #call p{
+                text-align: center;
+                font-size: 0.8em;
+            }
+            .call_input{
+                width: 300px;
+                height: 45px;
+                border: none; /*1px solid #8ccf3f*/
+                background-color: #e1e1e1;
+                font-size: 1em;
+                font-weight: 300;
+                margin: 30px auto;
+                padding: 0px 15px;
+                display: block;
+            }
+            .call_input:active{
+                border: none;
+            }
+            .button_call{
+                width: 200px;
+                height: 40px;
+                background-color: #eeeeee;
+                border: 1px solid #8ccf3f;
+                display: block;
+                margin: 0px auto;
+                font-weight: 300;
+                cursor: pointer;
+            }
